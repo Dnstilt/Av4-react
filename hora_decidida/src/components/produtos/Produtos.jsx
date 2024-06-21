@@ -15,3 +15,27 @@ const Produtos = () => {
                     Seja nosso cliente!!!
                 </a>
             </div>
+            {/* Modal form seja nosso cliente */}
+            <div className="modal fade" id="sejaNosso" tabIndex="-1" aria-labelledby="clienteModal" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <p className="modal-title fs-5 text-center text-dark" id="exampleModalLabel">Coloque seu
+                                e-mail e telefone para entrarmos em contato com você!</p>
+                        </div>
+                        <div className="modal-body">
+                            <form>
+                                <div className="mb-3">
+                                    <label htmlFor="recipient-name" className="col-form-label">E-mail:</label>
+                                    <input type="text" className="form-control" id="recipient-email"/>
+                                </div>
+                                <div className="mb-3">
+                                    <label for="recipient-name" className="col-form-label">Telefone:</label>
+                                    <input type="text" className="form-control" id="recipient-telefone"/>
+                                </div>
+                                <div className="mb-3">
+                                    <label for="recipient-name" className="col-form-label">Nome:</label>
+                                    <input type="text" className="form-control" id="recipient-nome"/>
+                                </div>
+                            </form>
+                        </div>
