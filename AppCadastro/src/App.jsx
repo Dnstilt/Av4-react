@@ -5,8 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './pages/HomePage'
-import ProductsPage from './pages/ProductsPage'
-import PartnersPage from './pages/PartnersPage'
+import ProdutosPage from './pages/ProdutosPage'
+import ParceirosPage from './pages/ParceirosPage'
 import PoliticaPage from './pages/PoliticaPage'
 import TermosPage from './pages/TermosPage'
 import UsersPage from './pages/UsersPage'
@@ -19,8 +19,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
       <Route index element={ <HomePage /> }/>
-      <Route path="/produtos" element={ <ProductsPage/> }/>
-      <Route path="/parceiros" element={ <PartnersPage/> }/>
+      <Route path="/produtos" element={ <ProdutosPage/> }/>
+      <Route path="/parceiros" element={ <ParceirosPage/> }/>
       <Route path="/politica" element={ <PoliticaPage/> }/>
       <Route path="/termos" element={ <TermosPage/> }/>
       <Route path="/users" element={ <UsersPage /> }/>
