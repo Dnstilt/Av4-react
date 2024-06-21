@@ -100,3 +100,6 @@ const politicaDePrivacidade = () => {
                 <p>Para exercer seus direitos de titular, você deve entrar em contato com a Hora decidida, através dos
                     seguintes meios disponíveis:</p>
                 <p>contato@horadecidida.com.br</p>
+                <p>De forma a garantir a sua correta identificação como titular dos dados pessoais, objeto da
+                    solicitação, é possível que solicitemos documentos ou demais comprovações que possam comprovar sua
+                    identidade. Nessa hipótese, você será informado previamente.</p>
