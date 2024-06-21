@@ -103,3 +103,57 @@ const politicaDePrivacidade = () => {
                 <p>De forma a garantir a sua correta identificação como titular dos dados pessoais, objeto da
                     solicitação, é possível que solicitemos documentos ou demais comprovações que possam comprovar sua
                     identidade. Nessa hipótese, você será informado previamente.</p>
+                <p className="fs-3">6. Como e por quanto tempo seus dados serão armazenados?</p>
+                <p>Seus dados pessoais coletados pela Hora decidida serão utilizados e armazenados durante o tempo
+                    necessário para o cumprimento das obrigações legais e/ou regulatória; execução de contrato ou de
+                    procedimentos preliminares relacionados a contrato do qual seja parte o titular; para o exercício
+                    regular de direitos em processo judicial, administrativo ou arbitral, e, quando necessário para
+                    atender aos interesses legítimos do controlador ou de terceiros; ou, ainda, para que as finalidades
+                    elencadas na presente Política de Privacidade sejam atingidas, considerando os direitos dos
+                    titulares dos dados e dos controladores.</p>
+                <p>De modo geral, seus dados serão mantidos enquanto a relação contratual entre você e a MinhaAgenda
+                    perdurar. Findado o período de armazenamento dos dados pessoais, estes serão excluídos de nossas
+                    bases de dados ou anonimizados, ressalvadas as hipóteses legalmente previstas no artigo 16 Lei Geral
+                    de Proteção de Dados, a saber:</p>
+                <ol type="I">
+                    <li>Cumprimento de obrigação legal ou regulatória pelo controlador;N</li>
+                    <li>Estudo por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados
+                        pessoais;
+                    </li>
+                    <li>Transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos
+                        nesta Lei; ou
+                    </li>
+                    <li>Uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os
+                        dados.
+                    </li>
+                </ol>
+                <p>Isto é, informações pessoais sobre você que sejam imprescindíveis para o cumprimento de determinações
+                    legais, judiciais e administrativas e/ou para o exercício do direito de defesa em processos
+                    judiciais e administrativos serão mantidas, a despeito da exclusão dos demais dados.</p>
+                <p>O armazenamento de dados coletados pela Hora decidida reflete o nosso compromisso com a segurança e
+                    privacidade dos seus dados. Empregamos medidas e soluções técnicas de proteção aptas a garantir a
+                    confidencialidade, integridade e inviolabilidade dos seus dados. Além disso, também contamos com
+                    medidas de segurança apropriadas aos riscos e com controle de acesso às informações armazenadas.</p>
+                <p className="fs-3">7. O que fazemos para manter seus dados seguros?</p>
+                <p>Para mantermos suas informações pessoais seguras, usamos ferramentas físicas, eletrônicas e
+                    gerenciais orientadas para a proteção da sua privacidade.</p>
+                <p>Aplicamos essas ferramentas levando em consideração a natureza dos dados pessoais coletados, o
+                    contexto e a finalidade do tratamento e os riscos que eventuais violações gerariam para os direitos
+                    e liberdades do titular dos dados coletados e tratados. Entre as medidas que adotamos, destacamos as
+                    seguintes:</p>
+                <ol type="a">
+                    <li> Apenas pessoas autorizadas têm acesso a seus dados pessoais;</li>
+                    <li>O acesso a seus dados pessoais é feito somente após o compromisso de confidencialidade; e</li>
+                    <li>Seus dados pessoais são armazenados em ambiente seguro e idôneo.</li>
+                </ol>
+                <p>A Hora decidida se compromete a adotar as melhores posturas para evitar incidentes de segurança.
+                    Contudo, é necessário destacar que nenhuma página e/ou plataforma virtual é inteiramente segura e
+                    livre de riscos. É possível que, apesar de todos os nossos protocolos de segurança, problemas de
+                    culpa exclusivamente de terceiros ocorram, como ataques cibernéticos de hackers, ou também em
+                    decorrência da negligência ou imprudência do próprio usuário/cliente.</p>
+                <p>Orientamos que defina uma senha forte para o acesso às nossas plataformas, bem com que limite a
+                    quantidade de dispositivos que utiliza para acessar nossas plataformas. Evite entrar em computadores
+                    que não são de uso pessoal, e tenha certeza de desconectar (sair/log out) ao final do uso.</p>
+                <p>Em caso de incidentes de segurança que possa gerar risco ou dano relevante para os titulares de
+                    dados, comunicaremos aos afetados e a Autoridade Nacional de Proteção de Dados sobre o ocorrido, em
+                    consonância com as disposições da Lei Geral de Proteção de Dados.</p>
