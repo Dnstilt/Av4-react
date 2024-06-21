@@ -14,7 +14,6 @@ import NotFoundPage from './pages/NotFoundPage'
 import MainLayout from "./Layouts/MainLayout";
 import EmpresasPage from "./pages/Empresas";
 import FuncionariosPage from "./pages/Funcionarios";
-import './App.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
