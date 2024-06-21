@@ -39,3 +39,12 @@ const Produtos = () => {
                                 </div>
                             </form>
                         </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary shadow-sm"
+                                    data-bs-dismiss="modal">Fechar
+                            </button>
+                            <button type="button" className="btn btn-primary shadow-sm">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
