@@ -66,3 +66,37 @@ const politicaDePrivacidade = () => {
                     (f) Para defender nossos interesses em eventual processo judicial, administrativo ou arbitral. Neste
                     caso, poderemos utilizar todos os dados pessoais relativos à lide em questão.
                 </p>
+                <p className="fs-3">3. Consentimento</p>
+                <p>
+                    Em consonância com a Lei Geral de Proteção de Dados, seus dados só serão coletados, tratados e
+                    armazenados para as finalidades previstas no item 2 supra.
+                </p>
+                <p>Ao fornecer seus dados pessoais à Hora decidida, você está ciente e consentindo com as disposições
+                    desta Política de Privacidade, além de conhecer seus direitos e como exercê-los.</p>
+                <p>A qualquer tempo e sem nenhum custo, você poderá solicitar informações sobre os seus dados pessoais
+                    que armazenamos, assim como, eventualmente, desde que devidamente justificado e cabível, requerer a
+                    alteração deles.</p>
+                <p className="fs-3">4. Quais são os seus direitos?</p>
+                <p>A Hora decidida assegura aos titulares dos dados pessoais todos os direitos previstos no artigo 18 da
+                    Lei Geral de Proteção de Dados. Dessa forma, você pode, de maneira gratuita e a qualquer tempo:</p>
+                <ol type="a">
+                    <li>Confirmar a existência de tratamento de dados, de maneira simplificada ou em formato claro e
+                        completo.
+                    </li>
+                    <li>Acessar seus dados, podendo solicitá-los em uma cópia legível sob forma impressa ou por meio
+                        eletrônico, seguro e idôneo.
+                    </li>
+                    <li>Corrigir seus dados, ao solicitar a edição, correção ou atualização destes.</li>
+                    <li>Limitar seus dados quando desnecessários, excessivos ou tratados em desconformidade com a
+                        legislação através da anonimização, bloqueio ou eliminação.
+                    </li>
+                    <li>Solicitar a portabilidade de seus dados, através de um relatório de dados cadastrais que a Hora
+                        decidida trata a seu respeito.
+                    </li>
+                    <li>Eliminar seus dados tratados a partir de seu consentimento, exceto nos casos previstos em lei.
+                    </li>
+                </ol>
+                <p className="fs-3">5. Como você pode exercer seus direitos de titular?</p>
+                <p>Para exercer seus direitos de titular, você deve entrar em contato com a Hora decidida, através dos
+                    seguintes meios disponíveis:</p>
+                <p>contato@horadecidida.com.br</p>
