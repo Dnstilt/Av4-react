@@ -157,3 +157,44 @@ const politicaDePrivacidade = () => {
                 <p>Em caso de incidentes de segurança que possa gerar risco ou dano relevante para os titulares de
                     dados, comunicaremos aos afetados e a Autoridade Nacional de Proteção de Dados sobre o ocorrido, em
                     consonância com as disposições da Lei Geral de Proteção de Dados.</p>
+                <p className="fs-3">8. Com quem seus dados podem ser compartilhados?</p>
+                <p>Tendo em vista a preservação de sua privacidade, a Hora decidida não compartilhará seus dados pessoais com nenhum terceiro não autorizado.</p>
+                <p>Seus dados poderão ser compartilhados com nossas empresas coligadas. Estas receberão seus dados apenas na medida do necessário para as finalidades já relacionadas no item 2 supra e todos os nossos contratos são orientados pelas normas de proteção de dados do ordenamento jurídico brasileiro.</p>
+                <p>Além disso, também existem outras hipóteses em que seus dados poderão ser compartilhados, que são:</p>
+                <ol type="I">
+                    <li>Determinação legal, requerimento, requisição ou ordem judicial, com autoridades judiciais, administrativas ou governamentais competentes;</li>
+                    <li>Caso de movimentações societárias, como fusão, aquisição e incorporação, de forma automática; e</li>
+                    <li>Proteção dos direitos da Hora decidida em qualquer tipo de conflito, inclusive os de teor judicial.</li>
+                </ol>
+                <p className="fs-3">9. Transferência internacional de dados</p>
+                <p>Sempre que necessária a transferência internacional de dados pessoais, a Hora decidida observará as disposições legais e os regulamentos emitidos pelas autoridades competentes relacionados à transferência internacional de dados pessoais.</p>
+                <p className="fs-3">10. Ferramentas de Monitoramento</p>
+                <p>Ao navegar no aplicativo da Hora decidida, algumas ferramentas poderão ser utilizadas para monitoramento da experiência do Usuário, com a finalidade de melhorar o serviço e a navegação pelo aplicativo.</p>
+                <p className="fs-3">11. Medidas de Segurança</p>
+                <p>Infelizmente, a transferência de informações via Internet nunca é 100% segura, portanto, não podemos garantir a total segurança dos dados transmitidos via Internet.
+                    Entretanto, utilizamos medidas técnicas e organizacionais para proteger nosso website contra perda, destruição, acesso, modificação ou distribuição de seus dados por pessoas não autorizadas.
+                    Nossas medidas de segurança estão sendo constantemente aperfeiçoadas de acordo com os avanços da tecnologia.</p>
+                <p className="fs-3">12. Alteração desta Política de Privacidade</p>
+                <p>A atual versão da Política de Privacidade foi formulada e atualizada pela última vez em: 05 de maio de 2024.
+                    Reservamos o direito de modificar essa Política de Privacidade a qualquer tempo, principalmente em função da adequação a eventuais alterações feitas em nosso aplicativo ou em âmbito legislativo. Recomendamos que você a revise com frequência.
+                    Eventuais alterações entrarão em vigor a partir de sua divulgação pública e sempre lhe notificaremos acerca das mudanças ocorridas.</p>
+                <p className="fs-3">13. Responsabilidade</p>
+                <p>A Hora decidida prevê a responsabilidade dos agentes que atuam nos processos de tratamento de dados, em conformidade com os artigos 42 ao 45 da Lei Geral de Proteção de Dados. Nos comprometemos em manter esta Política de Privacidade atualizada, observando suas disposições e zelando por seu cumprimento.
+                    Além disso, também assumimos o compromisso de buscar condições técnicas e organizativas seguramente aptas a proteger todo o processo de tratamento de dados.
+                    Caso a Autoridade Nacional de Proteção de Dados exija a adoção de providências em relação ao tratamento de dados realizado pela Hora decidida, comprometemo-nos a segui-las.</p>
+                <p className="fs-3">14. Isenção de responsabilidade</p>
+                <p>Conforme mencionado no item 11 supra, embora adotemos elevados padrões de segurança a fim de evitar incidentes, não há nenhuma base de dados inteiramente livre de riscos. Nesse sentido, a Hora decidida não se responsabiliza por:</p>
+                <ol type="I">
+                    <li>Ações maliciosas de terceiros, como ataques de hackers, exceto se comprovada conduta culposa ou deliberada da Hora decidida. Destacamos que em caso de incidentes de segurança que possam gerar risco ou dano relevante para você ou qualquer um de nossos usuários/clientes, comunicaremos aos afetados e a Autoridade Nacional de Proteção de Dados sobre o ocorrido e cumpriremos as providências necessárias.</li>
+                    <li>Inveracidade das informações fornecidas pelo titular dos dados pessoais; quaisquer consequências decorrentes de informações falsas ou inseridas de má-fé são de inteiramente responsabilidade do titular.</li>
+                </ol>
+                <p className="fs-3">15. Encarregado de Proteção de Dados</p>
+                <p>A Hora decidida disponibiliza os seguintes meios para que você possa entrar em contato conosco para exercer seus direitos de titular:</p>
+                <p>contato@horadecidida.com.br</p>
+                <p>Caso tenha dúvidas sobre esta Política de Privacidade ou sobre os dados pessoais que tratamos, você pode entrar em contato com o nosso Encarregado de Proteção de Dados Pessoais, através do seguinte canal:</p>
+                <p>contato@horadecidida.com.br</p>
+            </div>
+        </main>
+    )
+}
+export default politicaDePrivacidade
