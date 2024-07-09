@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import {
+  Route, 
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import HomePage from './pages/HomePage'
+import ProductsPage from './pages/ProductsPage'
+import PartnersPage from './pages/PartnersPage'
+import PoliticaPage from './pages/PoliticaPage'
+import TermosPage from './pages/TermosPage'
+import ClientesPage from './pages/ClientePages/ClientesPage'
+import NotFoundPage from './pages/NotFoundPage'
+import MainLayout from "./Layouts/MainLayout";
+import EmpresasPage from "./pages/EmpresasPages/Empresaspage";
+import FuncionariosPage from "./pages/FuncionariosPage";
+import CreateClientePage  from "./pages/ClientePages/CreateClientePage";
+import UpdateClientePage from "./pages/ClientePages/UpdateClientePage";
+import CreateEmpresasPage from "./pages/EmpresasPages/CreateEmpresasPage";
+import UpdateEmpresasPage from "./pages/EmpresasPages/UpdateEmpresasPage";
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />} >
+      <Route index element={ <HomePage /> }/>
+      <Route path="/produtos" element={ <ProductsPage/> }/>
+      <Route path="/parceiros" element={ <PartnersPage/> }/>
+      <Route path="/politica" element={ <PoliticaPage/> }/>
+      <Route path="/termos" element={ <TermosPage/> }/>
+      <Route path="/clientes" element={ <ClientesPage /> }/>
+      <Route path="/createcliente" element={ <CreateClientePage /> }/>
+      <Route path="/updatecliente/:id" element={ <UpdateClientePage /> }/>
+      <Route path="/empresas" element={ <EmpresasPage /> }/>
+      <Route path="/createempresas" element={ < CreateEmpresasPage/> }/>
+      <Route path="/updadeempresas/:id" element={ < UpdateEmpresasPage /> }/>
+      <Route path="/funcionarios" element={ <FuncionariosPage /> }/>
+      <Route path="*" element={ <NotFoundPage/> }/> 
+    </Route>  
+)
+);
+const App = () => {
+ return <RouterProvider router ={router}/>
+};
+export default App;
