@@ -4,11 +4,11 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Empresas = () => {
     const [empresas, setEmpresas] = useState([])
-
+   
     const navigate = useNavigate()
 
     function getEmpresas() {
-        fetch("http://localhost:3000/empresas")
+        fetch("http://localhost:3000/empresas ")
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -38,30 +38,30 @@ const Empresas = () => {
             </div>
             <table className="table">
                 <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Nome</th>
-                    <th>Endereço</th>
-                    <th>Telefone</th>
-                    <th>Ações</th>
-                </tr>
+                    <tr>
+                        <th>id</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
                 </thead>
                 <tbody>
-                {
-                    empresas.map((empresa, index) => {
-                        return (
-                            <tr key={index}>
-                                <td>{empresa.id}</td>
-                                <td>{empresa.nome}</td>
-                                <td>{empresa.endereco}</td>
-                                <td>{empresa.telefone}</td>
-                                <td style={{ width: "10px", whiteSpace: "nowrap" }}>
-                                    <Link className="btn btn-primary btn-sm me-1" to={"/updadeempresas/"+empresa.id}>Editar</Link>
-                                </td>
-                            </tr>
-                        )
-                    })
-                }
+                    {
+                        empresas.map((empresa, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{empresa.id}</td>
+                                    <td>{empresa.nome}</td>
+                                    <td>{empresa.endereco}</td>
+                                    <td>{empresa.telefone}</td>
+                                    <td style={{ width: "10px", whiteSpace: "nowrap" }}>
+                                        <Link className="btn btn-primary btn-sm me-1" to={"/updadeempresas/"+empresa.id}>Editar</Link>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </div>

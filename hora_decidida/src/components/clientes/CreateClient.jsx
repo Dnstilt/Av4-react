@@ -11,17 +11,17 @@ const CreateClient = () => {
     let inputTelefone = useRef()
 
     async function createCliente(){
-
+    
         if (!inputNome.current.value || !inputCpf.current.value || !inputEmail.current.value || !inputTelefone.current.value) {
             alert("Porfavor preencha todos os campos")
             return
         }
         try {
             await api.post('/clientes', {
-                nome:inputNome.current.value,
-                cpf:inputCpf.current.value,
-                email:inputEmail.current.value,
-                telefone:inputTelefone.current.value
+            nome:inputNome.current.value,
+            cpf:inputCpf.current.value,
+            email:inputEmail.current.value,
+            telefone:inputTelefone.current.value   
             })
             if (response.ok) {
                 navigate("/clientes")
@@ -32,10 +32,11 @@ const CreateClient = () => {
             else {
                 alert("Não foi possível cadastrar o cliente tente novamente")
             }
-        }
+        } 
         catch (error) {
             navigate("/clientes")
         }
+        
     }
 
     return (
@@ -48,28 +49,28 @@ const CreateClient = () => {
                             <label className="col-sm-4 col-form-label" >Nome</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" name="nome" ref={inputNome}/>
-
+                                
                             </div>
                         </div>
                         <div className="row mb-5">
                             <label className="col-sm-4 col-form-label" >CPF</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" name="cpf" ref={inputCpf} />
-
+                                
                             </div>
                         </div>
                         <div className="row mb-5">
                             <label className="col-sm-4 col-form-label">Email</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" name="email" ref={inputEmail}/>
-
+                                
                             </div>
                         </div>
                         <div className="row mb-5">
                             <label className="col-sm-4 col-form-label" >Telefone</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" name="telefone" ref={inputTelefone}/>
-
+                                
                             </div>
                         </div>
                         <div className="row">

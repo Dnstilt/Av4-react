@@ -1,11 +1,11 @@
 import CreateFuncionario from '../../componentes/Funcionarios/CreateFuncionario';
 
 const CreateFuncionarioPage = () => {
-    return (
-        <>
-            <CreateFuncionario/>
-        </>
-    );
+  return (
+    <>
+     <CreateFuncionario/>
+    </>
+  );
 };
 
 export default CreateFuncionarioPage;

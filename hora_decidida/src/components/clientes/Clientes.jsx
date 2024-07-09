@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Clientes = () => {
     const [clientes, setClientes] = useState([])
-
+   
     const navigate = useNavigate()
 
     function getClientes() {
@@ -38,32 +38,32 @@ const Clientes = () => {
             </div>
             <table className="table">
                 <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Ações</th>
-                </tr>
+                    <tr>
+                        <th>id</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
                 </thead>
                 <tbody>
-                {
-                    clientes.map((cliente, index) => {
-                        return (
-                            <tr key={index}>
-                                <td>{cliente.id}</td>
-                                <td>{cliente.nome}</td>
-                                <td>{cliente.cpf}</td>
-                                <td>{cliente.email}</td>
-                                <td>{cliente.telefone}</td>
-                                <td style={{ width: "10px", whiteSpace: "nowrap" }}>
-                                    <Link className="btn btn-primary btn-sm me-1" to={"/updatecliente/"+cliente.id}>Editar</Link>
-                                </td>
-                            </tr>
-                        )
-                    })
-                }
+                    {
+                        clientes.map((cliente, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{cliente.id}</td>
+                                    <td>{cliente.nome}</td>
+                                    <td>{cliente.cpf}</td>
+                                    <td>{cliente.email}</td>
+                                    <td>{cliente.telefone}</td>
+                                    <td style={{ width: "10px", whiteSpace: "nowrap" }}>
+                                        <Link className="btn btn-primary btn-sm me-1" to={"/updatecliente/"+cliente.id}>Editar</Link>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </div>

@@ -4,11 +4,11 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Funcionarios = () => {
     const [funcionarios, setFuncionarios] = useState([])
-
+   
     const navigate = useNavigate()
 
     function getFuncionarios() {
-        fetch("http://localhost:3000/funcionarios")
+        fetch("http://localhost:3000/funcionarios ")
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -38,28 +38,28 @@ const Funcionarios = () => {
             </div>
             <table className="table">
                 <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Ações</th>
-                </tr>
+                    <tr>
+                        <th>id</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Ações</th>
+                    </tr>
                 </thead>
                 <tbody>
-                {
-                    funcionarios.map((funcionario, index) => {
-                        return (
-                            <tr key={index}>
-                                <td>{funcionario.id}</td>
-                                <td>{funcionario.nome}</td>
-                                <td>{funcionario.cpf}</td>
-                                <td style={{ width: "10px", whiteSpace: "nowrap" }}>
-                                    <Link className="btn btn-primary btn-sm me-1" to={"/updatefuncionario/"+funcionario.id}>Editar</Link>
-                                </td>
-                            </tr>
-                        )
-                    })
-                }
+                    {
+                        funcionarios.map((funcionario, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{funcionario.id}</td>
+                                    <td>{funcionario.nome}</td>
+                                    <td>{funcionario.cpf}</td>
+                                    <td style={{ width: "10px", whiteSpace: "nowrap" }}>
+                                        <Link className="btn btn-primary btn-sm me-1" to={"/updatefuncionario/"+funcionario.id}>Editar</Link>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </div>

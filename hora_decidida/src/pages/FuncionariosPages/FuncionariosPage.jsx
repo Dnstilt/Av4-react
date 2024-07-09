@@ -2,11 +2,11 @@
 import Funcionarios from '../../componentes/Funcionarios/Funcionarios'
 
 const FuncionariosPage = () => {
-    return (
-        <>
-            <Funcionarios/>
-        </>
-    );
+  return (
+    <>
+     <Funcionarios/>
+    </>
+  );
 };
 
 export default FuncionariosPage;

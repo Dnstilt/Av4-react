@@ -14,7 +14,7 @@ const UpdateCliente = () => {
         telefone: ""
     })
     const navigate = useNavigate()
-
+   
     function getCliente() {
         fetch("http://localhost:3000/clientes/" + params.id)
             .then(response => {
@@ -35,7 +35,7 @@ const UpdateCliente = () => {
 
     async function handlerSubmit(event) {
         event.preventDefault()
-
+        
         if (!dadosIniciais.nome || !dadosIniciais.cpf || !dadosIniciais.email || !dadosIniciais.telefone) {
             alert("Porfavor preencha todos os campos")
             return
@@ -45,11 +45,11 @@ const UpdateCliente = () => {
                 nome:dadosIniciais.nome,
                 cpf:dadosIniciais.cpf,
                 email:dadosIniciais.email,
-                telefone:dadosIniciais.telefone
-            })
+                telefone:dadosIniciais.telefone   
+                })
             console.log(response.body)
             const data = await response.json()
-
+            
             if (response.status === 200) {
                 navigate("/clientes")
             }
@@ -84,31 +84,31 @@ const UpdateCliente = () => {
                             <div className="row mb-5">
                                 <label className="col-sm-4 col-form-label" >Nome</label>
                                 <div className="col-sm-8">
-                                    <input type="text" className="form-control" name="nome" value={dadosIniciais.nome}
-                                           onChange={e =>setDadosIniciais({...dadosIniciais, nome: e.target.value})}/>
-
+                                    <input type="text" className="form-control" name="nome" value={dadosIniciais.nome} 
+                                    onChange={e =>setDadosIniciais({...dadosIniciais, nome: e.target.value})}/>
+                                    
                                 </div>
                             </div>
                             <div className="row mb-5">
                                 <label className="col-sm-4 col-form-label" >CPF</label>
                                 <div className="col-sm-8">
-                                    <input type="text" className="form-control" name="cpf"  value={dadosIniciais.cpf}
-                                           onChange={e =>setDadosIniciais({...dadosIniciais, cpf: e.target.value})}/>
+                                    <input type="text" className="form-control" name="cpf"  value={dadosIniciais.cpf} 
+                                    onChange={e =>setDadosIniciais({...dadosIniciais, cpf: e.target.value})}/>
 
                                 </div>
                             </div>
                             <div className="row mb-5">
                                 <label className="col-sm-4 col-form-label">Email</label>
                                 <div className="col-sm-8">
-                                    <input type="email" className="form-control" name="email"  value={dadosIniciais.email}
-                                           onChange={e =>setDadosIniciais({...dadosIniciais, email: e.target.value})}/>
+                                    <input type="email" className="form-control" name="email"  value={dadosIniciais.email} 
+                                    onChange={e =>setDadosIniciais({...dadosIniciais, email: e.target.value})}/>
                                 </div>
                             </div>
                             <div className="row mb-5">
                                 <label className="col-sm-4 col-form-label" >Telefone</label>
                                 <div className="col-sm-8">
-                                    <input type="text" className="form-control" name="telefone"  value={dadosIniciais.telefone}
-                                           onChange={e =>setDadosIniciais({...dadosIniciais, telefone: e.target.value})}/>
+                                    <input type="text" className="form-control" name="telefone"  value={dadosIniciais.telefone} 
+                                    onChange={e =>setDadosIniciais({...dadosIniciais, telefone: e.target.value})}/>
 
                                 </div>
                             </div>

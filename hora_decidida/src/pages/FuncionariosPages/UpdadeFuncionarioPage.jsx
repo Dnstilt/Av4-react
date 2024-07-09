@@ -1,11 +1,11 @@
 import UpdateFuncionario from '../../componentes/Funcionarios/UpdateFuncionario'
 
 const UpdateFuncionarioPage = () => {
-    return (
-        <>
-            <UpdateFuncionario/>
-        </>
-    );
+  return (
+    <>
+     <UpdateFuncionario/>
+    </>
+  );
 };
 
 export default UpdateFuncionarioPage;
