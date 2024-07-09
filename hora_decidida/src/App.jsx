@@ -14,7 +14,7 @@ import ClientesPage from './pages/ClientePages/ClientesPage'
 import NotFoundPage from './pages/NotFoundPage'
 import MainLayout from "./Layouts/MainLayout";
 import EmpresasPage from "./pages/EmpresasPages/Empresaspage";
-import FuncionariosPage from "./pages/FuncionariosPage";
+import FuncionariosPage from "./pages/FuncionariosPages/FuncionariosPage.jsx";
 import CreateClientePage  from "./pages/ClientePages/CreateClientePage";
 import UpdateClientePage from "./pages/ClientePages/UpdateClientePage";
 import CreateEmpresasPage from "./pages/EmpresasPages/CreateEmpresasPage";
