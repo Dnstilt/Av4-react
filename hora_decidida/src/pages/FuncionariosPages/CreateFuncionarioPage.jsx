@@ -1,4 +1,4 @@
-import CreateFuncionario from '../../componentes/Funcionarios/CreateFuncionario';
+import CreateFuncionario from '../../components/funcionarios/CreateFuncionario';
 
 const CreateFuncionarioPage = () => {
   return (

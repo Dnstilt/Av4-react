@@ -1,4 +1,4 @@
-import Parceiros from '../componentes/Parceiros/Parceiros'
+import Parceiros from '../components/parceiros/Parceiros'
 
 const PartnersPage = () => {
   return (

@@ -1,4 +1,4 @@
-import UpdateCliente from '../../componentes/Clientes/UpdateCliente'
+import UpdateCliente from '../../components/clientes/UpdateCliente'
 
 const UpdateClientePage = () => {
   return (

@@ -6,19 +6,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './pages/HomePage'
-import ProductsPage from './pages/ProductsPage'
+import ProdutosPage from './pages/ProdutosPage'
 import PartnersPage from './pages/PartnersPage'
 import PoliticaPage from './pages/PoliticaPage'
 import TermosPage from './pages/TermosPage'
-import ClientesPage from './pages/ClientePages/ClientesPage'
+import ClientesPage from './pages/ClientesPages/ClientesPage'
 import NotFoundPage from './pages/NotFoundPage'
-import MainLayout from "./Layouts/MainLayout";
-import EmpresasPage from "./pages/EmpresasPages/EmpresasPage";
+import MainLayout from "./layouts/MainLayout";
+import EmpresasPage from "./pages/EmpresasPages/Empresaspage";
 import FuncionariosPage from "./pages/FuncionariosPages/FuncionariosPage";
 import CreateFuncionarioPage from "./pages/FuncionariosPages/CreateFuncionarioPage";
-import UpdateFuncionarioPage from "./pages/FuncionariosPages/UpdateFuncionarioPage";
-import CreateClientePage  from "./pages/ClientePages/CreateClientePage";
-import UpdateClientePage from "./pages/ClientePages/UpdateClientePage";
+import UpdateFuncionarioPage from "./pages/FuncionariosPages/UpdadeFuncionarioPage";
+import CreateClientePage  from "./pages/ClientesPages/CreateClientePage";
+import UpdateClientePage from "./pages/ClientesPages/UpdateClientePage";
 import CreateEmpresasPage from "./pages/EmpresasPages/CreateEmpresasPage";
 import UpdateEmpresasPage from "./pages/EmpresasPages/UpdateEmpresasPage";
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
       <Route index element={ <HomePage /> }/>
-      <Route path="/produtos" element={ <ProductsPage/> }/>
+      <Route path="/produtos" element={ <ProdutosPage/> }/>
       <Route path="/parceiros" element={ <PartnersPage/> }/>
       <Route path="/politica" element={ <PoliticaPage/> }/>
       <Route path="/termos" element={ <TermosPage/> }/>

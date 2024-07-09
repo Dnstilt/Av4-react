@@ -1,5 +1,5 @@
 
-import Politica from '../componentes/PoliticaDePrivacidade/PoliticaDePrivacidade'
+import Politica from '../components/politicaDePrivacidade/Politica'
 
 const PoliticaPage = () => {
   return (

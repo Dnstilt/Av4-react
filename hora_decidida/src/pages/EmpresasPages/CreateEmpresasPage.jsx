@@ -1,4 +1,4 @@
-import CreateEmpresas from '../../componentes/Empresas/CreateEmpresas'
+import CreateEmpresas from '../../components/empresas/CreateEmpresas'
 
 const CreateEmpresasPage = () => {
   return (

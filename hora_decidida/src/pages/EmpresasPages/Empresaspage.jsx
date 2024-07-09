@@ -1,4 +1,4 @@
-import Empresas from '../../componentes/Empresas/Empresas'
+import Empresas from '../../components/empresas/Empresas'
 
 const EmpresasPage = () => {
   return (

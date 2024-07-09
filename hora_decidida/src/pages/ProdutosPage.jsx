@@ -1,8 +1,8 @@
 
-import Produtos from '../componentes/Produtos/Produtos'
+import Produtos from '../components/produtos/Produtos'
 
 
-const ProductsPage = () => {
+const ProdutosPage = () => {
   return (
     <>
      <Produtos/>
@@ -10,4 +10,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default ProdutosPage;

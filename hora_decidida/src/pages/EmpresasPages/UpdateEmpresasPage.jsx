@@ -1,4 +1,4 @@
-import UpdateEmpresas from '../../componentes/Empresas/UpdateEmpresas'
+import UpdateEmpresas from '../../components/empresas/UpdateEmpresas'
 
 const UpdateEmpresasPage = () => {
   return (

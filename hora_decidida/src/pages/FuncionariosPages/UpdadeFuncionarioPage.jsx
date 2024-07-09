@@ -1,4 +1,4 @@
-import UpdateFuncionario from '../../componentes/Funcionarios/UpdateFuncionario'
+import UpdateFuncionario from '../../components/funcionarios/UpdateFuncionario'
 
 const UpdateFuncionarioPage = () => {
   return (

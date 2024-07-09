@@ -1,4 +1,4 @@
-import Termos from '../componentes/TermosDeUso/TermosDeUso'
+import Termos from '../components/termosDeUso/Termos'
 
 const TermosPage = () => {
   return (
