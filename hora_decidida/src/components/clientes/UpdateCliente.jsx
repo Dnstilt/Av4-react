@@ -16,7 +16,7 @@ const UpdateCliente = () => {
     const navigate = useNavigate()
    
     function getCliente() {
-        fetch("http://localhost:3000/clientes/" + params.id)
+        fetch("/clientes/" + params.id)
             .then(response => {
                 if(response.ok) {
                     return response.json()
@@ -41,7 +41,7 @@ const UpdateCliente = () => {
             return
         }
         try {
-            await api.put('http://localhost:3000/clientes/' + params.id, {
+            await api.patch('/clientes/' + params.id, {
                 nome:dadosIniciais.nome,
                 cpf:dadosIniciais.cpf,
                 email:dadosIniciais.email,
