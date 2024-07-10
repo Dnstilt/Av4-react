@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import api from "../../services/api.jsx";
 
 
 const Empresas = () => {
@@ -8,10 +9,11 @@ const Empresas = () => {
     const navigate = useNavigate()
 
     function getEmpresas() {
-        fetch("http://localhost:3000/empresas ")
+        //fetch("/empresas")
+        api.get("/empresas")
             .then(response => {
-                if (response.ok) {
-                    return response.json()
+                if (response.status === 200) {
+                    return response.data//.json()
                 }
                 throw new Error()
             })
