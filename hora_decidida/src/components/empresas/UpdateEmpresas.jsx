@@ -15,7 +15,7 @@ const UpdateEmpresas = () => {
     const navigate = useNavigate()
     
     function getEmpresas() {
-        fetch("http://localhost:3000/empresas/" + params.id)
+        fetch("/empresas/" + params.id)
             .then(response => {
                 if(response.ok) {
                     return response.json()
@@ -24,7 +24,7 @@ const UpdateEmpresas = () => {
             })
             .then(data => {
                 setDadosIniciais(data)
-                console.log(dadosIniciais)
+                //console.log(dadosIniciais)
             })
             .catch(error => {
                 alert("Não foi possível achar a empresa.")
@@ -41,7 +41,7 @@ const UpdateEmpresas = () => {
             return
         }
         try {
-            await api.put('http://localhost:3000/empresas/' + params.id, {
+            await api.patch('/empresas/' + params.id, {
                 nome:dadosIniciais.nome,
                 endereco:dadosIniciais.endereco,
                 telefone:dadosIniciais.telefone   
@@ -57,7 +57,7 @@ const UpdateEmpresas = () => {
             }
             else {
                 console.log(Error)
-                alert("Não foi possível editar o cliente tente novamente")
+                alert("Não foi possível editar a empresa tente novamente")
             }
         }
         catch (error) {
@@ -109,7 +109,7 @@ const UpdateEmpresas = () => {
                                     <button type="submit" className="btn btn-primary">Salvar</button>
                                 </div>
                                 <div className="col-sm-4 d-grid">
-                                    <Link className="btn btn-secondary" to="/clientes" role="button">Cancelar</Link>
+                                    <Link className="btn btn-secondary" to="/empresas" role="button">Cancelar</Link>
                                 </div>
                             </div>
                         </form>

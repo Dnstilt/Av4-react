@@ -69,7 +69,7 @@ const CreateEmpresas = () => {
                                 <button type="button" onClick={createEmpresas} className="btn btn-primary">Enviar</button>
                             </div>
                             <div className="col-sm-4 d-grid">
-                                <Link className="btn btn-secondary" to="/clientes" role="button">Cancelar</Link>
+                                <Link className="btn btn-secondary" to="/empresas" role="button">Cancelar</Link>
                             </div>
                         </div>
                     </form>
