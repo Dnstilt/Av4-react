@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import api from "../../services/api.jsx";
 
 
 const Clientes = () => {
@@ -8,10 +9,11 @@ const Clientes = () => {
     const navigate = useNavigate()
 
     function getClientes() {
-        fetch("http://localhost:3000/clientes ")
+        // fetch("/clientes")
+        api.get("/clientes")
             .then(response => {
-                if (response.ok) {
-                    return response.json()
+                if (response.status === 200) {
+                    return response.data//.json()
                 }
                 throw new Error()
             })
