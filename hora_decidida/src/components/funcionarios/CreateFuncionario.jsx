@@ -18,8 +18,10 @@ const CreateFuncionario = () => {
         }
         try {
             await api.post('/funcionarios', {
-            nome:inputNome.current.value,
-            cpf:inputCpf.current.value
+                nome:inputNome.current.value,
+                cpf:inputCpf.current.value,
+                email:inputEmail.current.value,
+                telefone:inputTelefone.current.value
             })
             if (response.ok) {
                 navigate("/funcionarios")
@@ -42,24 +44,37 @@ const CreateFuncionario = () => {
             <div className="row">
                 <div className="col-md-8 mx-auto align-content-center rounded border p-4">
                     <h2 className="text-center mb-5">Insira um novo Funcionario.</h2>
-                    <form >
+                    <form>
                         <div className="row mb-5">
-                            <label className="col-sm-4 col-form-label" >Nome</label>
+                            <label className="col-sm-4 col-form-label">Nome</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" name="nome" ref={inputNome}/>
-                                
+
                             </div>
                         </div>
                         <div className="row mb-5">
-                            <label className="col-sm-4 col-form-label" >CPF</label>
+                            <label className="col-sm-4 col-form-label">CPF</label>
                             <div className="col-sm-8">
-                                <input type="text" className="form-control" name="cpf" ref={inputCpf} />
-                                
+                                <input type="text" className="form-control" name="cpf" ref={inputCpf}/>
+
+                            </div>
+                        </div>
+                        <div className="row mb-5">
+                            <label className="col-sm-4 col-form-label">E-mail</label>
+                            <div className="col-sm-8">
+                                <input type="text" className="form-control" name="email" ref={inputEmail}/>
+                            </div>
+                        </div>
+                        <div className="row mb-5">
+                            <label className="col-sm-4 col-form-label">Telefone</label>
+                            <div className="col-sm-8">
+                                <input type="text" className="form-control" name="telefone" ref={inputTelefone}/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="offset-sm-4 col-sm-4 d-grid">
-                                <button type="button" onClick={createFuncionario} className="btn btn-primary">Enviar</button>
+                                <button type="button" onClick={createFuncionario} className="btn btn-primary">Enviar
+                                </button>
                             </div>
                             <div className="col-sm-4 d-grid">
                                 <Link className="btn btn-secondary" to="/funcionarios" role="button">Cancelar</Link>
