@@ -16,10 +16,10 @@ const UpdateFuncionario = () => {
     const navigate = useNavigate()
    
     function getFuncionario() {
-        fetch("/funcionarios/" + params.id)
+        api.get("/funcionarios/" + params.id)
             .then(response => {
-                if(response.ok) {
-                    return response.json()
+                if(response.status === 200) {
+                    return response.data
                 }
                 throw new Error()
             })

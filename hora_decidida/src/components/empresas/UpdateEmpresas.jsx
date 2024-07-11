@@ -15,10 +15,10 @@ const UpdateEmpresas = () => {
     const navigate = useNavigate()
     
     function getEmpresas() {
-        fetch("/empresas/" + params.id)
+        api.get("/empresas/" + params.id)
             .then(response => {
-                if(response.ok) {
-                    return response.json()
+                if(response.status === 200) {
+                    return response.data
                 }
                 throw new Error()
             })

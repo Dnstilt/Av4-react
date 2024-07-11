@@ -16,10 +16,10 @@ const UpdateCliente = () => {
     const navigate = useNavigate()
    
     function getCliente() {
-        fetch("/clientes/" + params.id)
+        api.get("/clientes/" + params.id)
             .then(response => {
-                if(response.ok) {
-                    return response.json()
+                if(response.status === 200) {
+                    return response.data
                 }
                 throw new Error()
             })
