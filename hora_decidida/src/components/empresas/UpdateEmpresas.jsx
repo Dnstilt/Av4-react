@@ -17,7 +17,7 @@ const UpdateEmpresas = () => {
     function getEmpresas() {
         api.get("/empresas/" + params.id)
             .then(response => {
-                if(response === 200) {
+                if(response.status === 200) {
                     return response.data
                 }
                 throw new Error()
