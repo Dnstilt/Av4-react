@@ -18,7 +18,7 @@ const UpdateFuncionario = () => {
     function getFuncionario() {
         api.get("/funcionarios/" + params.id)
             .then(response => {
-                if(response === 200) {
+                if(response.status === 200) {
                     return response.data
                 }
                 throw new Error()
